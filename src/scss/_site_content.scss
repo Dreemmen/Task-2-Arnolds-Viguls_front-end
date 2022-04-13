@@ -1,1 +1,21 @@
 // Content styles goes here
+
+.play-btn {
+    /* Positioning */
+    position: absolute;
+    z-index: 10;
+    
+    /* Box-model */
+    width: 100%;
+    height: 100%;
+    
+    /* Typography */
+    
+    /* Visual */
+    cursor: pointer;
+}
+
+.about-us-block {
+    margin-top: 10%;
+    margin-bottom:  10%;
+}

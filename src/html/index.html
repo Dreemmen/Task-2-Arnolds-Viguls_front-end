@@ -2,19 +2,40 @@ ${require('./partials/_header.html')}
 
 <main class="site-content">
     <div class="container">
-        <h1 class="h1 mgb--l ta--center">Heading</h1>
-
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="./uploads/placeholder.png" alt="Image">
+        <div class="row relative main-page-video">
+                <!--          CSS draw shape  -->
+                <div role="img" class="play-btn" style="background: url(uploads/play_button.svg) center no-repeat;">
+                </div>
+                <video class="col" id="home-video-player">
+                    <source src="uploads/dog_pet_canine_white_sitting_lying_433.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  <!-- fallback embed youtube? iframe youtube video? -->
+                </video>
+        </div>
+        <!--<h1 class="h1 mgb--l ta--center">Heading</h1>-->
+        <div class="row justify-content-center ta--center" >
+            <div class="about-us-block col-lg-7">
+                SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
             </div>
-
+        </div>
+        <div class="row">
+            mozaika
+        </div>
+        <div class="row justify-content-center ta--center">
+            <div class="col-lg-6">
+                <h4 class="h4">VĒLIES PIEPILDĪT SAVU SAPNI?</h4>
+                <div class="btn">Sapņotājiem</div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="h4">VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</h4>
+                <div class="btn">Uzņēmējiem</div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-lg-4 offset-lg-1">
-                <h3 class="h3 mgb--m">Sub heading</h3>
-
-                <div class="editor">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus vestibulum mi sed hendrerit. Fusce pharetra diam non molestie tincidunt.</p>
-                    <p>Duis est est, viverra vel felis vitae, posuere finibus mi. Cras volutpat sollicitudin nibh, vitae porta velit rhoncus ut. Phasellus ut lectus eleifend, ullamcorper magna ut, tincidunt leo. Donec eu bibendum lacus, sit amet dapibus lorem. In mollis porttitor tellus rhoncus pulvinar. Donec varius vulputate ipsum, sed sollicitudin velit. Mauris quis mi nec lectus hendrerit finibus. Nullam tincidunt justo arcu, sagittis bibendum lacus blandit vitae. Cras rhoncus, dolor id egestas fermentum, odio magna convallis felis, id luctus augue erat a nunc. Nunc condimentum nibh lectus, et facilisis elit semper id. Phasellus a mattis libero. Duis condimentum et orci at rutrum.</p>
+                <h3 class="h3 mgb--m">Sazināties ar mums</h3>
+                <div>
+                    <p>text</p>
                 </div>
             </div>
         </div>
