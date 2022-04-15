@@ -32,11 +32,20 @@ ${require('./partials/_header.html')}
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 offset-lg-1">
-                <h3 class="h3 mgb--m">Sazināties ar mums</h3>
-                <div>
-                    <p>text</p>
-                </div>
+            <div class="col-lg-8 offset-lg-2">
+                <h3 class="h3 mgb--m ta--center">Sazināties ar mums</h3>
+                <form class="form-group" method="POST">
+                    <input name="name" type="text" placeholder="Vārds, Uzvārds*" />
+                    <input name="email" type="text" placeholder="E-pasts*" />
+                    <input name="phone" type="number" placeholder="Telefons*" />
+                    <textarea name="message" rows="10" placeholder="Jautājums, vai komentārs*" ></textarea>
+                    <div class="form-notice">* obligāti aizpildāmie lauki</div>
+                    <div class="check-row">
+                        <input name="agreement" type="checkbox" />
+                        <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kāmēr tas būs nepieciešams.</p>
+                    </div>
+                    <button name="issubmit" class="submit-btn">Sūtīt</button>
+                </form>
             </div>
         </div>
     </div>

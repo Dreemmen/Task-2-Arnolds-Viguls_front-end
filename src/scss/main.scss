@@ -35,12 +35,16 @@ $c_success  : #26a65b;
 @import '../css/normalize.css';
 @import '../css/reset.css';
 
+// nepatīk šis variants. mapē framework iemetu, domāju automātiski pievienos. nebija ne jaussmas, ka te jāpieslēdz. Ir iespējams autoload šo?
 // Framework
 @import 'framework/bootstrap_grid';
 @import 'framework/framework_layout';
 @import 'framework/framework_page';
 @import 'framework/framework_visual';
 // @import 'framework/framework_print';
+@import 'framework/framework_forms';
+@import 'framework/framework_box-shadow';
+@import 'framework/framework_transition';
 @import 'font_face';
 
 // Components
