@@ -16,17 +16,13 @@
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
 
-  // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
-  @if $enable-rounded {
-    // Manually use the if/else instead of the mixin to account for iOS override
-    border-radius: $input-border-radius;
-  } @else {
-    // Otherwise undo the iOS default
-    border-radius: 0;
-  }
 
-  @include box-shadow($input-box-shadow);
-  @include transition($input-transition);
+ border-radius: $input-border-radius;
+ 
+ /* izskatās kā extras kuras nav vajadzigas
+ box-shadow: $input-box-shadow;
+ transition: $input-transition;
+*/
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
@@ -35,7 +31,7 @@
   }
 
   // Customize the `:focus` state to imitate native WebKit styles.
-  @include form-control-focus();
+  /*@include form-control-focus();*/
 
   // Placeholder
   &::placeholder {
@@ -143,7 +139,7 @@ select.form-control {
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $font-size-sm;
   line-height: $input-line-height-sm;
-  @include border-radius($input-border-radius-sm);
+  border-radius: $input-border-radius-sm;
 }
 
 .form-control-lg {
@@ -151,7 +147,7 @@ select.form-control {
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $font-size-lg;
   line-height: $input-line-height-lg;
-  @include border-radius($input-border-radius-lg);
+  border-radius: $input-border-radius-lg;
 }
 
 // stylelint-disable no-duplicate-selectors
@@ -216,7 +212,7 @@ textarea.form-control {
   margin-left: -$form-check-input-gutter;
 
   &:disabled ~ .form-check-label {
-    color: $text-muted;
+    color: $gray-700;
   }
 }
 
@@ -247,8 +243,8 @@ textarea.form-control {
 // pseudo-classes but also includes `.is-invalid` and `.is-valid` classes for
 // server side validation.
 
-@include form-validation-state("valid", $form-feedback-valid-color);
-@include form-validation-state("invalid", $form-feedback-invalid-color);
+/*@include form-validation-state("valid", $form-feedback-valid-color);*/
+/*@include form-validation-state("invalid", $form-feedback-invalid-color);*/
 
 // Inline forms
 //
@@ -272,14 +268,14 @@ textarea.form-control {
   }
 
   // Kick in the inline
-  @include media-breakpoint-up(sm) {
+  @media ( min-width: map-get( $breakpoints, sm ) ) {
     label {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 0;
     }
-
+    
     // Inline-block all the things for "inline"
     .form-group {
       display: flex;
