@@ -9,6 +9,7 @@ $font-size-base: 18px;
 $font-size-large: 24px;
 $font-size-sm: $font-size-base;
 $font-size-lg: $font-size-base;
+$font-weight-normal: 500;
 
 // Responsive setup
 $breakpoints: (
@@ -53,9 +54,9 @@ $gray-900: #212529 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-y:         .7rem !default;
 $input-btn-padding-x:         .75rem !default;
-$input-btn-line-height:        1.2em !default;
+$input-btn-line-height:        21px !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-box-shadow:  0 0 0 2px rgba(0, 0, 0, .25) !default;
@@ -68,8 +69,8 @@ $input-btn-padding-y-lg:      .5rem !default;
 $input-btn-padding-x-lg:      1rem !default;
 $input-btn-line-height-lg:    $input-btn-line-height !default;
 
-$input-btn-border-width:      1px !default;
-$border-radius:               50%;
+$input-btn-border-width:      0px !default;
+$border-radius:                  6px;
 
 // Buttons
 //
@@ -124,7 +125,7 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
-$input-bg:                               rgba(255, 255, 255, 1) !default;
+$input-bg:                               rgba(196, 196, 196, 0.4) !default;
 $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
@@ -147,15 +148,10 @@ $input-plaintext-color:                    $c_font !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
 
-/* Priekš kam tā sarežģīt...   $input-height-inner:  ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default; */
-$input-height-inner:                     $input-btn-line-height !default;
-$input-height:                          calc(#{$input-height-inner} + #{$input-height-border}) !default;
-
-$input-height-inner-sm:               $input-btn-line-height !default;
-$input-height-sm:                       calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
-
-$input-height-inner-lg:                $input-btn-line-height !default;
-$input-height-lg:                       calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
+/* Bootstrap 4 $input-height kalkulācija aizvietota parastu "auto" */
+$input-height:          auto;
+$input-height-sm:    auto;
+$input-height-lg:      auto;
 
 $input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -223,6 +219,7 @@ $dropdown-header-color:             $gray-600 !default;
 @import 'framework/framework_visual';
 // @import 'framework/framework_print';
 @import 'framework/framework_forms';
+@import 'framework/framework_buttons';
 @import 'font_face';
 
 // Components

@@ -32,19 +32,37 @@ ${require('./partials/_header.html')}
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8 offset-lg-2">
+            <div class="col-lg-6 offset-lg-3">
                 <h3 class="h3 mgb--m ta--center">Sazināties ar mums</h3>
-                <form class="form-group" method="POST">
-                    <input name="name" type="text" placeholder="Vārds, Uzvārds*" />
-                    <input name="email" type="text" placeholder="E-pasts*" />
-                    <input name="phone" type="number" placeholder="Telefons*" />
-                    <textarea name="message" rows="10" placeholder="Jautājums, vai komentārs*" ></textarea>
-                    <div class="form-notice">* obligāti aizpildāmie lauki</div>
-                    <div class="check-row">
-                        <input name="agreement" type="checkbox" />
-                        <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kāmēr tas būs nepieciešams.</p>
+                <form method="POST">
+                    <div  class="form-group form-row">
+                        <div class="col">
+                        <input class="form-control" name="name" type="text" placeholder="Vārds, Uzvārds*" />
+                        </div>
+                        <div class="col">
+                        <input class="form-control" name="email" type="text" placeholder="E-pasts*" />
+                        </div>
                     </div>
-                    <button name="issubmit" class="submit-btn">Sūtīt</button>
+                    <div class="form-group form-row">
+                        <div class="col">
+                        <input class="form-control" name="phone" type="number" placeholder="Telefons*" />
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col">
+                        <textarea class="form-control" name="message" rows="10" placeholder="Jautājums, vai komentārs*" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col">* obligāti aizpildāmie lauki</div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col">
+                        <input class="form-inline" name="agreement" type="checkbox" />
+                        <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kāmēr tas būs nepieciešams.</p>
+                        </div>
+                    </div>
+                    <button  name="issubmit" class="btn">Sūtīt</button>
                 </form>
             </div>
         </div>
