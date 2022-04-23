@@ -2,7 +2,10 @@
  * Header general
  */
 .site-header {
-    padding-bottom: 10px;
+    max-height: 96px; //without tear paper effect
+}
+.site-header .site-logo {
+    margin-top: -45px;
 }
 
 
