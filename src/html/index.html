@@ -1,7 +1,7 @@
 ${require('./partials/_header.html')}
 
 <main class="site-content">
-    <div class="container">
+    <div class="">
         <div class="row relative main-page-video">
                 <!--          CSS draw shape  -->
                 <div role="img" class="play-btn" style="background: url(uploads/play_button.svg) center no-repeat;">
@@ -12,16 +12,33 @@ ${require('./partials/_header.html')}
                   <!-- fallback embed youtube? iframe youtube video? -->
                 </video>
         </div>
-        <!--<h1 class="h1 mgb--l ta--center">Heading</h1>-->
-        <div class="row justify-content-center ta--center" >
+        <div class="row large-top-margin justify-content-center ta--center" >
             <div class="about-us-block col-lg-7">
                 SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
             </div>
         </div>
-        <div class="row">
-            mozaika
+        <div class="row large-top-margin">
+            <div role="img" style="position: relative;height: 41px;width:100%;margin-bottom: -40px;background:  rgba(255,255,255,0) url(uploads/paper_tear_67.png) bottom center no-repeat;"></div>
+            <div class="col-3 p-0">
+                <img class="img-cover" src="uploads/1Zanda_1_moz.jpg" alt=""> 
+            </div>
+            <div class="col-3 p-0">
+                <img class="img-cover" src="uploads/2Sibilla_4_moz.jpg" alt=""> 
+            </div>
+            <div class="col-3 p-0">
+                    <div class="row"><div class="col p-0">
+                    <img class="img-cover" src="uploads/3Brinuma_meita-15_moz.jpg" alt="">
+                    </div></div>
+                    <div class="row"><div class="col p-0">
+                    <img class="img-cover" src="uploads/4Alina_1_1_moz.jpg" alt="">
+                    </div></div>
+            </div>
+            <div class="col-3 p-0">
+                <img class="img-cover" src="uploads/5Anda_2_1_moz.jpg" alt="">
+            </div>
+            <div role="img" class="flip-180" style="position: relative;height: 41px;width:100%;margin-top: -40px;background:  rgba(255,255,255,0) url(uploads/paper_tear_67.png) bottom center no-repeat;"></div>
         </div>
-        <div class="row justify-content-center ta--center">
+        <div class="row large-top-margin justify-content-center ta--center">
             <div class="col-lg-6">
                 <h4 class="h4">VĒLIES PIEPILDĪT SAVU SAPNI?</h4>
                 <div class="btn">Sapņotājiem</div>
@@ -31,7 +48,7 @@ ${require('./partials/_header.html')}
                 <div class="btn">Uzņēmējiem</div>
             </div>
         </div>
-        <div class="row">
+        <div class="row large-top-margin large-bot-margin">
             <div class="col-lg-6 offset-lg-3">
                 <h3 class="h3 mgb--m ta--center">Sazināties ar mums</h3>
                 <form method="POST">
@@ -66,16 +83,17 @@ ${require('./partials/_header.html')}
                 </form>
             </div>
         </div>
-        <div class="row justify-content-center ta--center">
+        <div role="img" style="position: relative;height: 41px;width:100%;margin-bottom: -40px;background:  rgba(255,255,255,0) url(uploads/paper_tear_67.png) bottom center no-repeat;"></div>
+        <div class="supporters row py-5 justify-content-center ta--center">
                 <div class="col">
                     <h4 class="h4">ATBALSTĪTĀJI</h4>
                 </div>
-        </div>
-        <div class="container d-flex align-items-center justify-content-around">
-            <img src="uploads/logo_teikums.svg" alt="Teikums">
-            <img src="uploads/logo_sem.svg" alt="SEM">
-            <img src="uploads/logo_citybee.svg" alt="City Bee">
-            <img src="uploads/logo_linearis.svg" alt="Linearis">
+                <div class="container d-flex align-items-center justify-content-evenly">
+                    <img src="uploads/logo_teikums.svg" alt="Teikums">
+                    <img src="uploads/logo_sem.svg" alt="SEM">
+                    <img src="uploads/logo_citybee.svg" alt="City Bee">
+                    <img src="uploads/logo_linearis.svg" alt="Linearis">
+                </div>
         </div>
     </div>
 </main>

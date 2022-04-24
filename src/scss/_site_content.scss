@@ -1,1 +1,25 @@
 // Content styles goes here
+html {
+    background-color: #f5c2c7;
+}
+body {
+    max-width: 1366px;
+    margin: auto;
+}
+.large-top-margin {
+    margin-top: $large-top-margin;
+}
+.large-bot-margin {
+    margin-bottom: $large-top-margin;
+}
+.flip-180 {
+    transform: rotate(180deg);
+}
+.img-cover {
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+.supporters {
+    background-color: #FFCB66;
+}
